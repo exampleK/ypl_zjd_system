@@ -1,0 +1,460 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 127.0.0.1
+ Source Server Type    : MySQL
+ Source Server Version : 50553
+ Source Host           : localhost:3306
+ Source Schema         : test
+
+ Target Server Type    : MySQL
+ Target Server Version : 50553
+ File Encoding         : 65001
+
+ Date: 03/11/2019 21:49:49
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for boom_car
+-- ----------------------------
+DROP TABLE IF EXISTS `boom_car`;
+CREATE TABLE `boom_car`  (
+  `data` date NOT NULL,
+  `num` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `oil_scale` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  PRIMARY KEY (`data`) USING BTREE
+) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of boom_car
+-- ----------------------------
+INSERT INTO `boom_car` VALUES ('2019-08-24', NULL, '8692.0');
+INSERT INTO `boom_car` VALUES ('2019-09-04', NULL, '1760.0');
+INSERT INTO `boom_car` VALUES ('2019-08-26', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-08-28', NULL, '6502.0');
+INSERT INTO `boom_car` VALUES ('2019-08-29', NULL, '7900.0');
+INSERT INTO `boom_car` VALUES ('2019-09-01', NULL, '3207.0');
+INSERT INTO `boom_car` VALUES ('2019-08-25', NULL, '5568.0');
+INSERT INTO `boom_car` VALUES ('2019-08-31', NULL, '6026.0');
+INSERT INTO `boom_car` VALUES ('2019-08-23', NULL, '4441.0');
+INSERT INTO `boom_car` VALUES ('2019-08-27', NULL, '9578.0');
+INSERT INTO `boom_car` VALUES ('2019-08-30', NULL, '6301.0');
+INSERT INTO `boom_car` VALUES ('2019-09-07', NULL, '7803.0');
+INSERT INTO `boom_car` VALUES ('2019-09-08', NULL, '15240.0');
+INSERT INTO `boom_car` VALUES ('2019-09-09', NULL, '8500.0');
+INSERT INTO `boom_car` VALUES ('2019-09-10', NULL, '5278.0');
+INSERT INTO `boom_car` VALUES ('2019-09-02', NULL, '3437.0');
+INSERT INTO `boom_car` VALUES ('2019-09-03', NULL, '4371.0');
+INSERT INTO `boom_car` VALUES ('2019-09-05', NULL, '8236.0');
+INSERT INTO `boom_car` VALUES ('2019-09-11', NULL, '3269.0');
+INSERT INTO `boom_car` VALUES ('2019-09-06', NULL, '4765.0');
+INSERT INTO `boom_car` VALUES ('2019-09-16', NULL, '94.0');
+INSERT INTO `boom_car` VALUES ('2019-09-14', NULL, '6931.0');
+INSERT INTO `boom_car` VALUES ('2019-09-17', NULL, '8860.0');
+INSERT INTO `boom_car` VALUES ('2019-09-13', NULL, '1376.0');
+INSERT INTO `boom_car` VALUES ('2019-09-12', NULL, '7455.0');
+INSERT INTO `boom_car` VALUES ('2019-09-15', NULL, '6986.0');
+INSERT INTO `boom_car` VALUES ('2019-09-18', NULL, '7191.0');
+INSERT INTO `boom_car` VALUES ('2019-09-23', NULL, '4798.0');
+INSERT INTO `boom_car` VALUES ('2019-09-20', NULL, '8161.0');
+INSERT INTO `boom_car` VALUES ('2019-09-19', NULL, '13131.0');
+INSERT INTO `boom_car` VALUES ('2019-09-22', NULL, '7775.0');
+INSERT INTO `boom_car` VALUES ('2019-09-21', NULL, '8242.0');
+INSERT INTO `boom_car` VALUES ('2019-10-02', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-09-27', NULL, '8057.0');
+INSERT INTO `boom_car` VALUES ('2019-09-29', NULL, '9671.0');
+INSERT INTO `boom_car` VALUES ('2019-09-24', NULL, '2896.0');
+INSERT INTO `boom_car` VALUES ('2019-10-01', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-09-26', NULL, '4859.0');
+INSERT INTO `boom_car` VALUES ('2019-09-28', NULL, '4288.0');
+INSERT INTO `boom_car` VALUES ('2019-09-25', NULL, '326.0');
+INSERT INTO `boom_car` VALUES ('2019-09-30', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-03', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-09', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-05', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-06', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-04', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-08', NULL, '6069.0');
+INSERT INTO `boom_car` VALUES ('2019-10-07', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-10', NULL, '9563.0');
+INSERT INTO `boom_car` VALUES ('2019-10-12', NULL, '3007.0');
+INSERT INTO `boom_car` VALUES ('2019-10-11', NULL, '0');
+INSERT INTO `boom_car` VALUES ('2019-10-13', NULL, '5626.0');
+
+-- ----------------------------
+-- Table structure for drill_1
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_1`;
+CREATE TABLE `drill_1`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  `up_time` date NULL DEFAULT NULL,
+  `classes` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `main_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `assist_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `other_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 5 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of drill_1
+-- ----------------------------
+INSERT INTO `drill_1` VALUES (1, '2019-10-16 00:00:00', '10.2', '1-20191016', 2, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `drill_1` VALUES (2, '2019-10-17 00:00:00', '10.1', '1-20191016', 2, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `drill_1` VALUES (3, '2019-10-17 12:00:01', '15.2', '1-20191017120001', 1, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `drill_1` VALUES (4, '2019-10-17 12:01:01', '12.8', '1-20191017120001', 1, NULL, NULL, NULL, NULL, NULL);
+
+-- ----------------------------
+-- Table structure for drill_2
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_2`;
+CREATE TABLE `drill_2`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of drill_2
+-- ----------------------------
+INSERT INTO `drill_2` VALUES (1, '2019-10-16 00:00:01', '10.2', '2-20191016', 2);
+INSERT INTO `drill_2` VALUES (2, '2019-10-17 02:00:00', '10.1', '2-20191016p', 2);
+INSERT INTO `drill_2` VALUES (3, '2019-10-17 00:01:00', '15.2', '2-20191015', 2);
+
+-- ----------------------------
+-- Table structure for drill_6
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_6`;
+CREATE TABLE `drill_6`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for drill_7
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_7`;
+CREATE TABLE `drill_7`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for drill_8
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_8`;
+CREATE TABLE `drill_8`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for drill_9
+-- ----------------------------
+DROP TABLE IF EXISTS `drill_9`;
+CREATE TABLE `drill_9`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` datetime NULL DEFAULT NULL,
+  `scale` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `drill_status` int(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for income_oil
+-- ----------------------------
+DROP TABLE IF EXISTS `income_oil`;
+CREATE TABLE `income_oil`  (
+  `data` date NOT NULL,
+  `oil_scale` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  PRIMARY KEY (`data`) USING BTREE
+) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of income_oil
+-- ----------------------------
+INSERT INTO `income_oil` VALUES ('2019-09-07', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-05', '37905.88235');
+INSERT INTO `income_oil` VALUES ('2019-08-23', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-04', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-28', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-24', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-25', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-27', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-26', '43011.76');
+INSERT INTO `income_oil` VALUES ('2019-08-29', '0');
+INSERT INTO `income_oil` VALUES ('2019-08-31', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-01', '1');
+INSERT INTO `income_oil` VALUES ('2019-09-02', '2');
+INSERT INTO `income_oil` VALUES ('2019-09-03', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-10', '44376.471');
+INSERT INTO `income_oil` VALUES ('2019-09-09', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-08', '52058.823');
+INSERT INTO `income_oil` VALUES ('2019-08-30', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-11', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-06', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-16', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-14', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-17', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-13', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-12', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-15', '39247.058');
+INSERT INTO `income_oil` VALUES ('2019-09-18', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-23', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-20', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-19', '37317.647');
+INSERT INTO `income_oil` VALUES ('2019-09-22', '41929.41176');
+INSERT INTO `income_oil` VALUES ('2019-09-21', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-26', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-25', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-30', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-03', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-24', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-29', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-01', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-27', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-02', '0');
+INSERT INTO `income_oil` VALUES ('2019-09-28', '37882.352941176476');
+INSERT INTO `income_oil` VALUES ('2019-10-09', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-05', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-06', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-04', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-08', '14447.058823529413');
+INSERT INTO `income_oil` VALUES ('2019-10-07', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-10', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-12', '0');
+INSERT INTO `income_oil` VALUES ('2019-10-11', '27058.823529411766');
+INSERT INTO `income_oil` VALUES ('2019-10-13', '0');
+
+-- ----------------------------
+-- Table structure for nor_car
+-- ----------------------------
+DROP TABLE IF EXISTS `nor_car`;
+CREATE TABLE `nor_car`  (
+  `data` date NOT NULL,
+  `num` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `oil_scale` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  PRIMARY KEY (`data`) USING BTREE
+) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of nor_car
+-- ----------------------------
+INSERT INTO `nor_car` VALUES ('2019-08-31', NULL, '8068.0');
+INSERT INTO `nor_car` VALUES ('2019-09-03', NULL, '6268.0');
+INSERT INTO `nor_car` VALUES ('2019-08-30', NULL, '8305.0');
+INSERT INTO `nor_car` VALUES ('2019-08-23', NULL, '5212.0');
+INSERT INTO `nor_car` VALUES ('2019-09-04', NULL, '12442.0');
+INSERT INTO `nor_car` VALUES ('2019-08-28', NULL, '11000.0');
+INSERT INTO `nor_car` VALUES ('2019-08-24', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-08-25', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-08-27', NULL, '8790.0');
+INSERT INTO `nor_car` VALUES ('2019-08-26', NULL, '10084.0');
+INSERT INTO `nor_car` VALUES ('2019-08-29', NULL, '4140.0');
+INSERT INTO `nor_car` VALUES ('2019-09-01', NULL, '8159.0');
+INSERT INTO `nor_car` VALUES ('2019-09-07', NULL, '10034.0');
+INSERT INTO `nor_car` VALUES ('2019-09-08', NULL, '12169.0');
+INSERT INTO `nor_car` VALUES ('2019-09-09', NULL, '6117.0');
+INSERT INTO `nor_car` VALUES ('2019-09-10', NULL, '6249.0');
+INSERT INTO `nor_car` VALUES ('2019-09-02', NULL, '4036.0');
+INSERT INTO `nor_car` VALUES ('2019-09-05', NULL, '6000.0');
+INSERT INTO `nor_car` VALUES ('2019-09-11', NULL, '6047.0');
+INSERT INTO `nor_car` VALUES ('2019-09-06', NULL, '9204.0');
+INSERT INTO `nor_car` VALUES ('2019-09-16', NULL, '7030.0');
+INSERT INTO `nor_car` VALUES ('2019-09-14', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-09-17', NULL, '5428.0');
+INSERT INTO `nor_car` VALUES ('2019-09-13', NULL, '4184.0');
+INSERT INTO `nor_car` VALUES ('2019-09-12', NULL, '6028.0');
+INSERT INTO `nor_car` VALUES ('2019-09-15', NULL, '6213.0');
+INSERT INTO `nor_car` VALUES ('2019-09-18', NULL, '6043.0');
+INSERT INTO `nor_car` VALUES ('2019-09-23', NULL, '6000.0');
+INSERT INTO `nor_car` VALUES ('2019-09-20', NULL, '7420.0');
+INSERT INTO `nor_car` VALUES ('2019-09-19', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-09-22', NULL, '8129.0');
+INSERT INTO `nor_car` VALUES ('2019-09-21', NULL, '5047.0');
+INSERT INTO `nor_car` VALUES ('2019-09-26', NULL, '6000.0');
+INSERT INTO `nor_car` VALUES ('2019-09-27', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-09-24', NULL, '5377.0');
+INSERT INTO `nor_car` VALUES ('2019-09-28', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-10-01', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-09-29', NULL, '5137.0');
+INSERT INTO `nor_car` VALUES ('2019-10-02', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-09-25', NULL, '5089.0');
+INSERT INTO `nor_car` VALUES ('2019-09-30', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-10-03', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-10-09', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-10-05', NULL, '82.0');
+INSERT INTO `nor_car` VALUES ('2019-10-06', NULL, '7047.0');
+INSERT INTO `nor_car` VALUES ('2019-10-04', NULL, '0');
+INSERT INTO `nor_car` VALUES ('2019-10-08', NULL, '7162.0');
+INSERT INTO `nor_car` VALUES ('2019-10-07', NULL, '190.0');
+INSERT INTO `nor_car` VALUES ('2019-10-10', NULL, '7041.0');
+INSERT INTO `nor_car` VALUES ('2019-10-12', NULL, '7129.0');
+INSERT INTO `nor_car` VALUES ('2019-10-11', NULL, '4418.0');
+INSERT INTO `nor_car` VALUES ('2019-10-13', NULL, '7137.0');
+
+-- ----------------------------
+-- Table structure for oil_execl
+-- ----------------------------
+DROP TABLE IF EXISTS `oil_execl`;
+CREATE TABLE `oil_execl`  (
+  `date` date NOT NULL,
+  `sum` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `sum_ava` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `oil_sum_p` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `today_percent` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  PRIMARY KEY (`date`) USING BTREE
+) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of oil_execl
+-- ----------------------------
+INSERT INTO `oil_execl` VALUES ('2019-09-06', '8311.116751452588', '1311.1167514525878', '14', '16');
+INSERT INTO `oil_execl` VALUES ('2019-09-07', '4331.116751452588', '-2668.883248547412', '7', '3');
+INSERT INTO `oil_execl` VALUES ('2019-09-11', '32430.175451452582', '25430.175451452582', '53', '16');
+INSERT INTO `oil_execl` VALUES ('2019-09-17', '24575.23345145258', '17575.23345145258', '40', '24');
+INSERT INTO `oil_execl` VALUES ('2019-09-23', '13612.292211452579', '6612.292211452579', '22', '18');
+INSERT INTO `oil_execl` VALUES ('2019-10-03', '43963.99809262905', '36963.99809262905', '71', '0');
+INSERT INTO `oil_execl` VALUES ('2019-10-09', '42741.056916158464', '35741.056916158464', '69', '0');
+INSERT INTO `oil_execl` VALUES ('2019-10-12', '33765.52750439376', '26765.527504393758', '55', '17');
+
+-- ----------------------------
+-- Table structure for oil_high
+-- ----------------------------
+DROP TABLE IF EXISTS `oil_high`;
+CREATE TABLE `oil_high`  (
+  `date` date NULL DEFAULT NULL,
+  `oil_h1` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `oil_h2` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `oil_sum` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `oil_sum_ava` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of oil_high
+-- ----------------------------
+INSERT INTO `oil_high` VALUES ('2019-08-31', '1', '2', '2', '1', 1);
+INSERT INTO `oil_high` VALUES ('2019-09-01', '2', '1', '1', '1', 2);
+INSERT INTO `oil_high` VALUES ('2019-09-12', '1.41', '1.265', '35.582614798712314', '34.88261479871231', 3);
+INSERT INTO `oil_high` VALUES ('2019-09-18', '0.552', '0.722', '12.959748124926136', '12.259748124926137', 4);
+INSERT INTO `oil_high` VALUES ('2019-09-18', '2.1', '2.1', '57.71707019666112', '57.017070196661116', 5);
+INSERT INTO `oil_high` VALUES ('2019-09-29', '1.06', '0.0', '13.150920088612825', '12.450920088612826', 6);
+INSERT INTO `oil_high` VALUES ('2019-10-04', '2.1', '1.98', '56.336544697927025', '55.63654469792702', 7);
+INSERT INTO `oil_high` VALUES ('2019-10-11', '1.99', '0.44', '31.360766723196125', '30.660766723196126', 8);
+INSERT INTO `oil_high` VALUES ('2019-11-02', '1.0', '2.0', '39.87786015027585', '39.17786015027585', 9);
+
+-- ----------------------------
+-- Table structure for zjd_main
+-- ----------------------------
+DROP TABLE IF EXISTS `zjd_main`;
+CREATE TABLE `zjd_main`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NULL DEFAULT NULL,
+  `classes` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  `zjd_type` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  `main_worker` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  `assist_worker` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  `other_worker` text CHARACTER SET gb2312 COLLATE gb2312_bin NULL,
+  `hole_sum` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `hole_count` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `drill_id` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `drill_detailed` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `oil_main` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `oil_other` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
+  `status` int(255) NOT NULL,
+  `workplace` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of zjd_main
+-- ----------------------------
+INSERT INTO `zjd_main` VALUES (1, '0000-00-00', '白班', '1号牙轮钻机', '张三', '张一', '张三,张三,张三', '3', '20.2', '1-20191026-01', '20191026___1-20191026-01___10', '232', '112', 9, '准东');
+INSERT INTO `zjd_main` VALUES (2, '2019-10-25', '前夜', '6号牙轮钻机', '张五', '张四', '张一,张一,张一', '6', '220.2', '1-20191026-01', '20191026___1-20191026-01___10', '223', '22', 9, '天池');
+INSERT INTO `zjd_main` VALUES (3, '2019-10-25', '后夜', '9号牙轮钻机', '张六', '张三', '张五,张五,张五', '7', '221.2', '1-20191026-01', '20191026___1-20191026-01___10', '412', '33', 0, '准东');
+INSERT INTO `zjd_main` VALUES (6, '0000-00-00', '前夜', '6号牙轮钻机', '王凯', '张六', '王振,王三,张三', '8', '622.2', '1-20191026-02', '20191026___1-20191026-01___10', '233', '44', 9, '天池');
+INSERT INTO `zjd_main` VALUES (7, '0000-00-00', '前夜', '6号牙轮钻机', '王凯', '张昆明', '王振,王三,张三', '8', '622.2', '1-20191026-02', '20191026___1-20191026-01___10', '233', '44', 0, '天池');
+INSERT INTO `zjd_main` VALUES (8, '2019-10-30', '前夜', '6号牙轮钻机', '王凯', '张昆明', '王振,张六,张三', '8', '622.2', '1-20191026-02', '20191026___1-20191026-01___10', '233', '44', 9, '天池');
+INSERT INTO `zjd_main` VALUES (9, '0000-00-00', '前夜', '6号牙轮钻机', '王凯', '张昆明', '王振,王三,张三', '8', '622.2', '1-20191026-02', '20191026___1-20191026-01___10', '233', '44', 9, '天池');
+
+-- ----------------------------
+-- Table structure for zjd_name
+-- ----------------------------
+DROP TABLE IF EXISTS `zjd_name`;
+CREATE TABLE `zjd_name`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 22 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of zjd_name
+-- ----------------------------
+INSERT INTO `zjd_name` VALUES (1, '---请选择---');
+INSERT INTO `zjd_name` VALUES (2, '张昆明');
+INSERT INTO `zjd_name` VALUES (3, '王振');
+INSERT INTO `zjd_name` VALUES (4, '张伟');
+INSERT INTO `zjd_name` VALUES (5, '朱站长');
+INSERT INTO `zjd_name` VALUES (6, '何站长');
+INSERT INTO `zjd_name` VALUES (7, '王俊杰');
+INSERT INTO `zjd_name` VALUES (8, '王凯');
+INSERT INTO `zjd_name` VALUES (9, '22');
+INSERT INTO `zjd_name` VALUES (10, '33');
+INSERT INTO `zjd_name` VALUES (11, '334');
+INSERT INTO `zjd_name` VALUES (12, '55');
+INSERT INTO `zjd_name` VALUES (13, '66');
+INSERT INTO `zjd_name` VALUES (14, '77');
+INSERT INTO `zjd_name` VALUES (15, '88');
+INSERT INTO `zjd_name` VALUES (16, '99');
+INSERT INTO `zjd_name` VALUES (17, '00');
+INSERT INTO `zjd_name` VALUES (18, '111');
+INSERT INTO `zjd_name` VALUES (19, '222');
+INSERT INTO `zjd_name` VALUES (20, '333');
+INSERT INTO `zjd_name` VALUES (21, '344');
+
+-- ----------------------------
+-- Table structure for zjd_type_name
+-- ----------------------------
+DROP TABLE IF EXISTS `zjd_type_name`;
+CREATE TABLE `zjd_type_name`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text CHARACTER SET gb2312 COLLATE gb2312_chinese_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 8 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of zjd_type_name
+-- ----------------------------
+INSERT INTO `zjd_type_name` VALUES (1, '---请选择---');
+INSERT INTO `zjd_type_name` VALUES (2, '1号牙轮钻机');
+INSERT INTO `zjd_type_name` VALUES (3, '2号牙轮钻机');
+INSERT INTO `zjd_type_name` VALUES (4, '6号牙轮钻机');
+INSERT INTO `zjd_type_name` VALUES (5, '7号牙轮钻机');
+INSERT INTO `zjd_type_name` VALUES (6, '8号牙轮钻机');
+INSERT INTO `zjd_type_name` VALUES (7, '9号牙轮钻机');
+
+SET FOREIGN_KEY_CHECKS = 1;

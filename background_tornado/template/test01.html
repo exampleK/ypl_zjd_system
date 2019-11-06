@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<script src="{{static_url('assets/js/jquery-1.10.2.js')}}"></script>
+<script>
+$(function(){
+  var url="http://127.0.0.1:8000/zjd_main_json"
+   //使用getJSON方法取得JSON数据
+  $.getJSON(　　
+  url,
+  //处理数据 data指向的是返回来的JSON数据
+  function(data){
+    //生成标题和标题连接
+    var tit="<a href='"+ data.result +"'>"+data.zjd_type_result +"<\/a>";
+    $("h1").html(tit); 　　
+    //出现在指定位置H1 内
+  }
+  )
+ })
+</script>
+<body>
+
+    <div class="main">
+        <div class="ginfo" id="ginfo"> 
+         <h1></h1>
+         <p></p>
+         <p></p>
+        </div>
+        <ul>  
+        </ul>
+       </div>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+certifi==2018.8.24
+PyMySQL==0.9.3
+tornado==6.0.3
+wincertstore==0.2
+xlrd==1.2.0
